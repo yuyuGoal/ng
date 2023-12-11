@@ -2,6 +2,9 @@ import type { Config } from 'tailwindcss'
 
 export default {
   content: ["./src/**/*.{html,ts}",],
+  corePlugins: {
+    preflight: false,
+  },
   presets: [],
   prefix: 'tw-',
   darkMode: 'media', // or 'class'
