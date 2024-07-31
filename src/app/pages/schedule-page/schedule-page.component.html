@@ -1,4 +1,8 @@
-<ejs-schedule class="vh-100" [rowAutoHeight]="false" [height]="'100%'" [width]="'100%'"
-  [selectedDate]='selectedDate' [eventSettings]='eventSettings' [(currentView)]="selectedView" [views]="views">
+<ejs-schedule class="vh-100" #scheduleObj
+  [rowAutoHeight]="false" [height]="'100%'" [width]="'100%'"
+  [workDays]="workDays" [workHours]="workHours"
+  [selectedDate]='selectedDate' [eventSettings]='eventSettings' [currentView]="selectedView" [views]="views"
+  (created)="onCreated()"
+>
 
 </ejs-schedule>
