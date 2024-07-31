@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { ScheduleComponent } from './pages/schedule/schedule.component';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ScheduleComponent],
+  imports: [CommonModule, RouterOutlet, ToastModule],
+  providers: [MessageService],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

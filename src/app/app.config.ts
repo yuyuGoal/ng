@@ -4,7 +4,11 @@ import { AgendaService, DayService, MonthAgendaService, MonthService, TimelineMo
 
 import { routes } from './app.routes';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { provideHttpClient } from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), GridModule, DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService]
+  providers: [provideRouter(routes), provideAnimationsAsync(), provideHttpClient(),
+    GridModule,
+    DayService, WeekService, WorkWeekService, MonthService, AgendaService, MonthAgendaService, TimelineViewsService, TimelineMonthService]
 };

@@ -1,0 +1,22 @@
+<div class="container-fluid tw-bg-amber-300">
+  <div class="row vh-100 text-center align-items-center">
+    <div class="col tw-select-none">
+      <h1 class="my-5">「從他律到自律」，一個幫助人養成自律習慣的平台</h1>
+      <h3 class="my-3">From External Motivation to Self-Discipline: <br>A Platform to Help People Develop Self-Discipline Habits</h3>
+    </div>
+  </div>
+</div>
+
+<div class="tw-h-screen tw-flex tw-flex-col tw-justify-center tw-items-center tw-select-none hover:tw-bg-amber-50 tw-duration-1000">
+  <div class="image-container">
+    <img *ngIf="imgIndex === 0" [src]="imgSrcs[0]" class="tw-select-none image" [@fadeInOut] (mouseover)="imgIndex=1" alt="">
+    <img *ngIf="imgIndex === 1" [src]="imgSrcs[1]" class="tw-select-none image" [@fadeInOut] (mouseleave)="imgIndex=0" alt="">
+  </div>
+  <h1 class="tw-text-3xl hover:tw-bg-amber-700 hover:tw-text-4xl hover:tw-text-white hover:tw-border-amber-900 hover:tw-p-6
+  tw-border-amber-100 tw-border-solid tw-border-4 tw-rounded-full tw-duration-1000 tw-p-5 my-5 tw-cursor-pointer"
+    routerLink="schedule"
+  >
+    <span class="fade-in-out">Start Your Goal Today!</span>
+  </h1>
+  <div class="tw-text-xl tw-mt-10">Built on Chromia</div>
+</div>
