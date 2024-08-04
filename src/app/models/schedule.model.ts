@@ -1,11 +1,15 @@
 export type Schedule = {
-  Id: number;
-  Subject: string;
-  StartTime: string;
-  EndTime: string;
-  IsAllDay: boolean;
-  IsBlock: boolean;
-  IsReadonly: boolean;
-  RoomId: number;
-  ResourceId: number;
+  // guid: string;
+  id: number;
+  subject: string;
+  startTime: string;
+  endTime: string;
+  startTimezone: string;
+  endTimezone: string;
+  isAllDay: boolean;
+  isBlock: boolean;
+  isReadonly: boolean;
+  recurrenceRule: string;
+  // roomId: number;
+  // resourceId: number;
 };

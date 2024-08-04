@@ -1,0 +1,27 @@
+{
+  "requestType": "eventRemove",
+  "cancel": false,
+  "addedRecords": [],
+  "changedRecords": [],
+  "deletedRecords": [
+    {
+      "Subject": "qwer",
+      "Id": 9,
+      "StartTime": "2024-08-07T16:00:00.000Z",
+      "EndTime": "2024-08-08T16:00:00.000Z",
+      "isAllDay": true,
+      "Guid": "c8e56c85-1f69-bcc2-6963-5d945e5bb242"
+    }
+  ],
+  "data": [
+    {
+      "Subject": "qwer",
+      "Id": 9,
+      "StartTime": "2024-08-07T16:00:00.000Z",
+      "EndTime": "2024-08-08T16:00:00.000Z",
+      "isAllDay": true,
+      "Guid": "c8e56c85-1f69-bcc2-6963-5d945e5bb242"
+    }
+  ],
+  "name": "actionBegin"
+}

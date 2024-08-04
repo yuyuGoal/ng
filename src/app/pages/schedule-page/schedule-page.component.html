@@ -2,9 +2,8 @@
   [rowAutoHeight]="false" [height]="'100%'" [width]="'100%'"
   [workDays]="workDays" [workHours]="workHours"
   [selectedDate]='selectedDate' [eventSettings]='eventSettings' [currentView]="selectedView" [views]="views"
-  (created)="onCreated()"
+  (created)="onCreated()" (actionBegin)="onActionBegin($event)" (actionComplete)="onActionComplete($event)"
 >
-
 </ejs-schedule>
 
 {{data | json}}

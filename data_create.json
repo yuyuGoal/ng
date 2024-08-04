@@ -1,0 +1,28 @@
+{
+  "requestType": "eventCreate",
+  "cancel": false,
+  "data": [
+    {
+      "Subject": "eeeee",
+      "StartTime": "2024-08-05T16:00:00.000Z",
+      "EndTime": "2024-08-06T16:00:00.000Z",
+      "isAllDay": true,
+      "StartTimezone": null,
+      "EndTimezone": null,
+      "RecurrenceRule": "FREQ=DAILY;INTERVAL=3;UNTIL=20241004T160000Z;",
+      "Id": 100
+    }
+  ],
+  "addedRecords": [
+    {
+      "Subject": "qweqwe",
+      "Id": 9,
+      "StartTime": "2024-08-02T16:00:00.000Z",
+      "EndTime": "2024-08-03T16:00:00.000Z",
+      "isAllDay": true
+    }
+  ],
+  "changedRecords": [],
+  "deletedRecords": [],
+  "name": "actionBegin"
+}

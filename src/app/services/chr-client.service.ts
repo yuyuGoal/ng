@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, from } from 'rxjs';
 import { switchMap, catchError } from 'rxjs/operators';
-import { createClient, IClient } from 'postchain-client';
+import { createClient, encryption, IClient, newSignatureProvider } from 'postchain-client';
 import { environment } from '../../environments/environment';
+import { Buffer } from 'buffer';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ChrClientService {
+  private readonly privKey = Buffer.from(environment.blockchain.privKey, 'hex');
+  private readonly adminKeyPair = encryption.makeKeyPair(this.privKey);
+  public readonly adminSignatureProvider = newSignatureProvider(this.adminKeyPair);
+
   private clientSubject: BehaviorSubject<IClient | null> = new BehaviorSubject<IClient | null>(null);
 
   constructor() {

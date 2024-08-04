@@ -1,0 +1,38 @@
+{
+  "requestType": "eventChange",
+  "cancel": false,
+  "data": {
+    "EndTime": "2024-08-05T07:30:00.000Z",
+    "Id": 6,
+    "IsAllDay": 0,
+    "IsBlock": 0,
+    "IsReadonly": 0,
+    "RecurrenceRule": "FREQ=DAILY;INTERVAL=4;",
+    "StartTime": "2024-08-05T06:30:00.000Z",
+    "Subject": "跑步",
+    "Guid": "dbdceaa6-4359-9392-ba48-e089502ba199",
+    "isAllDay": false,
+    "StartTimezone": null,
+    "EndTimezone": null
+  },
+  "addedRecords": [],
+  "changedRecords": [
+    {
+      "EndTime": "2024-08-05T07:30:00.000Z",
+      "Id": 6,
+      "IsAllDay": 0,
+      "IsBlock": 0,
+      "IsReadonly": 0,
+      "RecurrenceRule": "FREQ=DAILY;INTERVAL=4;",
+      "StartTime": "2024-08-05T06:30:00.000Z",
+      "Subject": "跑步",
+      "Guid": "dbdceaa6-4359-9392-ba48-e089502ba199",
+      "isAllDay": false,
+      "StartTimezone": null,
+      "EndTimezone": null
+    }
+  ],
+  "deletedRecords": [],
+  "name": "actionBegin"
+}
+
