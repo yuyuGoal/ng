@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { NgIf } from '@angular/common';
@@ -24,7 +24,13 @@ import { NgIf } from '@angular/common';
     ])
   ]
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements OnInit {
   imgIndex = 0;
   imgSrcs = ['/assets/image/logo-dark.png', '/assets/image/logo.png'];
+  constructor() {
+
+  }
+
+  ngOnInit() {
+  }
 }

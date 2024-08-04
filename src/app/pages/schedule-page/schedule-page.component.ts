@@ -6,6 +6,7 @@ import { RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
 import { JsonPipe } from '@angular/common';
+import { ScheduleService } from '../../services/schedule.service';
 
 @Component({
   selector: 'app-schedule',
@@ -17,10 +18,19 @@ import { JsonPipe } from '@angular/common';
 })
 export class SchedulePageComponent implements OnInit {
   @ViewChild('scheduleObj') scheduleObj: ScheduleComponent | undefined;
-  ngOnInit(): void {
+
+  constructor(public scheduleService: ScheduleService) {
+
   }
 
-  constructor() {
+  ngOnInit(): void {
+    this.scheduleService.getAllSchedules();
+    let schedules$ = this.scheduleService.schedules$;
+    schedules$.subscribe(schedules => {
+      console.log('schedules: ', schedules);
+      this.data = schedules;
+      this.scheduleObj && (this.scheduleObj.eventSettings.dataSource = schedules);
+    })
   }
 
   onCreated(){
