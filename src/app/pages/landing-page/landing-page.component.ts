@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { NgIf } from '@angular/common';
+import { DockModule } from 'primeng/dock';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
   imports: [
     RouterLink,
-    NgIf
+    NgIf,
+    DockModule
   ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
